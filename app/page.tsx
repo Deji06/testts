@@ -10,9 +10,8 @@ import managerImage from '@/assest/projectManager.png'
 import Footer from './components/Footer'
 
 
-type Props = {}
 
-const page = (props: Props) => {
+const page = () => {
   return (
     <>
     <div className='p-5 pb-10'>

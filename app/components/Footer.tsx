@@ -6,9 +6,8 @@ import { FaSquareFacebook } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import companyName from '@/assest/Group 5.png'
 
-type Props = {}
 
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
     <div className='bg-[#555555] flex flex-col sm:flex-row items-center gap-x-20 gap-y-3 sm:h-[250px] p-10'>
         <div className='flex flex-col gap-y-5 items-center pl-2  '>
