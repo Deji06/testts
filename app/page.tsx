@@ -49,7 +49,7 @@ const page = () => {
         </div>
       </section>
 
-      <section className='mt-5 py-10'>
+      <section className='sm:mt-5 py-10'>
         <p className='text-[40px] font-bold text-center'>What our client says</p>
         <div className='grid grid-cols-1 sm:grid-cols-2 sm:gap-x-32 gap-y-10 sm:mx-auto p-10'>
           <div className='border-none bg-[#F3F6FA] sm:w-[350px] p-10 rounded-tl-[40px] rounded-br-[40px] '>
