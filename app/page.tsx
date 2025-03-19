@@ -16,7 +16,7 @@ const page = (props: Props) => {
   return (
     <>
     <div className='p-5 pb-10'>
-      <Image src={Hero} alt='background image' />
+      <Image src={Hero} alt='background image' className='h-auto object-contain w-full mx-auto' />
 
       <section>
         <p className='text-center font-bold text-[48px]'>our services</p>
@@ -24,11 +24,11 @@ const page = (props: Props) => {
           Whether it’s designing stunning <br /> websites, 
           creating unique logos, or managing your social media growth, we innovate to ensure your success.
         </p>
-        <div className='mt-5'>
-          <div className='flex sm:flex-row flex-col items-center s justify-between gap-y-5'>
-            <Image src={image1} alt='' width={300}/>
-            <Image src={image2} alt='' width={300}/>
-            <Image src={image3} alt='' width={300}/>
+        <div className='mt-10'>
+          <div className='flex sm:flex-row flex-col items-center justify-evenly gap-y-5'>
+            <Image src={image1} alt='' width={250}/>
+            <Image src={image2} alt='' width={250}/>
+            <Image src={image3} alt='' width={250}/>
           </div>
           <div className='flex justify-center mt-5'>
            <button className='border bg-[#D35400] text-white text-[12px] rounded-full px-10 py-3 cursor-pointer'>view all services</button>

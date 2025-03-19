@@ -22,9 +22,9 @@ const Navbar = () => {
       
       <div className="flex w-full sm:w-auto  justify-between items-center p-5 sm:p-0 ">
         <GiHamburgerMenu  className="sm:hidden text-[40px]" onClick={handleMenu}/>
-        <div className="flex gap-x-3">
+        <div className="flex gap-x-3 items-center">
           <Image src={logo} alt="company logo" width={60} height={30} />
-          <Image src={companyName} alt="company name" width={100} height={100} />
+         <Link href={'/'}> <Image src={companyName} alt="company name" className="w-auto h-auto max-w-[150px] sm:max-w-[200px] object-contain" /></Link> 
         </div>
       </div>
 
@@ -32,13 +32,13 @@ const Navbar = () => {
       {openMenu?
         <ul className="flex flex-col sm:flex-row sm:items-center items-start p-5 sm:p-0  gap-x-3 gap-y-5">
           <li className={pathname === "/" ? "font-bold text-[#D35400]" : ""}>
-            <Link href={"/"}>Home</Link>
+            <Link href={"/"} onClick={()=> setOpenMenu(false)}>Home</Link>
           </li>
           <div className="border h-4 hidden sm:flex"></div>
           <li
-            className={pathname === "/about" ? "font-bold text-[#D35400]" : ""}
+            className={pathname === "/about" ? "font-bold text-[#D35400]" : "" }
           >
-            <Link href={"/about"} className="capitalize">about us</Link>
+            <Link href={"/about"} className="capitalize" onClick={()=> setOpenMenu(false)}>about us</Link>
           </li>
           <div className="border h-4 hidden sm:flex"></div>
           <li
@@ -46,7 +46,7 @@ const Navbar = () => {
               pathname === "/services" ? "font-bold text-[#D35400]" : ""
             }
           >
-            <Link href={"/services"} className="capitalize">services</Link>
+            <Link href={"/services"} className="capitalize" onClick={()=> setOpenMenu(false)}>services</Link>
           </li>
           <div className="border h-4 hidden sm:flex`"></div>
           <li
@@ -54,7 +54,7 @@ const Navbar = () => {
               pathname === "/portfolio" ? "font-bold text-[#D35400]" : ""
             }
           >
-            <Link href={"/portfolio" } className="capitalize">portfolio</Link>
+            <Link href={"/portfolio" } className="capitalize" onClick={()=> setOpenMenu(false)}>portfolio</Link>
           </li>
         </ul> : " "
     }
@@ -89,7 +89,7 @@ const Navbar = () => {
         </ul> 
 
       <button className="border border-[#D35400] rounded-full flex items-center justify-center px-5 cursor-pointer h-10">
-        <Link href={"/contact"} className="capitalize text-[20px]">
+        <Link href={"/contact"} className="capitalize text-[20px] " onClick={()=> setOpenMenu(false)}>
           contact us
         </Link>
       </button>
