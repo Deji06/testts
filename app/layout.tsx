@@ -1,7 +1,11 @@
+// 'use client'
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+// import { ChakraProvider } from "@chakra-ui/react";
+import { Provider } from "@/components/ui/provider";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,12 +28,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <Provider>
         <Navbar />
         {children}
+      </Provider>
       </body>
     </html>
   );
