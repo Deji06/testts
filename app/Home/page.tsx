@@ -460,7 +460,7 @@ export default function Home(){
             <Box
               position={"relative"}
               zIndex={0}
-              left={{base:'200px', md:450}}
+              left={{base:'150px', md:450}}
               top={-150}
               width={"fit"}
             >
