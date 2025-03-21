@@ -1,7 +1,6 @@
 import { Box, Flex, Image, Link, Text } from "@chakra-ui/react";
 import { FaSquareFacebook, FaInstagram, FaXTwitter } from "react-icons/fa6";
-// import logo from '@/assest/logo.png'
-import companyName from '@/assest/Group 5.png'
+
 
 const Footer = () => {
   return (

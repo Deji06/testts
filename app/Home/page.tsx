@@ -24,8 +24,8 @@ import { Box, Flex, Text, Button, Icon, Input} from "@chakra-ui/react";
 
 export default function Home(){
     return (
-        <Box paddingLeft="30px" paddingBottom="100px" paddingRight="30px">
-        <Flex gapX="200px">
+        <Box paddingLeft={['10px',"30px"]} paddingBottom="100px" paddingRight={["30px"]}>
+        <Flex direction={{base:'column', md:'row'}} gapX="200px">
           <Box bg="#D9D9D9" w="350px" h="500px" position="relative">
             <Box
               position="absolute"
@@ -81,7 +81,7 @@ export default function Home(){
         </Flex>
 
         <section>
-          <Box ml={"100px"}>
+          <Box ml={['0px', "100px"]}>
             <Text textTransform={"uppercase"} fontSize={"14px"} color={'#555555'}>
               our services
             </Text>
@@ -90,6 +90,8 @@ export default function Home(){
             </Text>
             {/* container */}
             <Flex
+            direction={{base:'column', md:"row"}}
+            gapY={5}
               justifyContent={"space-between"}
               // alignItems={"center"}
               w="80%"
@@ -244,8 +246,9 @@ export default function Home(){
         </section>
 
         <section className="mt-5">
-          <Box ml={"100px"} mt={"50px"}>
+          <Box ml={['0px', "100px"]} mt={"50px"}>
             <Flex
+              direction={{base: 'column', md:'row'}}
               mt="40px"
               justifyContent="space-evenly"
               alignItems="center"
@@ -296,16 +299,16 @@ export default function Home(){
         </section>
 
         <section>
-          <Box position={"relative"} ml={"100px"} mt={"50px"} pb={20}>
-            <Box position={"absolute"} left={250} top={"150px"}>
+          <Box position={"relative"} ml={['0px',"100px"]} mt={"50px"} pb={20}>
+            <Box position={"absolute"} left={{ base: "50px", md: "250px" }} top={{ base: "100px", md: "150px" }} width={["80px", "160px"]}>
               <Image src={vector} alt="" width={160} />
             </Box>
 
-            <Box position={"absolute"} left={"270px"} top={"280px"} zIndex={1}>
+            <Box position={"absolute"} left={{base:'', md:"270px"}} top={"280px"} zIndex={1}>
               <Image src={box} alt="" width={200} />
             </Box>
 
-            <Box position={"absolute"} left={"250px"} top={"485px"}>
+            <Box position={"absolute"} left={{base:'80px', md:"250px"}} top={{base:'200px', md:"485px"}}>
               <Image src={eclipse2} alt="" width={100} />
             </Box>
 
@@ -313,11 +316,11 @@ export default function Home(){
               <Image src={eclipse1} alt="" width={180} height={500} />
             </Box>
 
-            <Box position={"absolute"} left={"550px"} top={"140px"}>
+            <Box position={"absolute"} left={{base:'', md:"550px"}} top={{base:'', md:"140px"}}>
               <Image src={box} alt="" width={200} />
             </Box>
 
-            <Box position={"absolute"} left={"800px"} top={""}>
+            <Box position={"absolute"} left={{base:"100px", md:"800px"}} top={""} width={["80px", "200px"]}>
               <Image src={box} alt="" width={200} />
             </Box>
 
@@ -334,7 +337,7 @@ export default function Home(){
               </Text>
               <Text color={'#555555'}>
                 From concept to execution, our work speaks for itself. Here are
-                a few projects we're proud of.
+                a few projects were proud of.
               </Text>
               <Button
                 variant="outline"
@@ -350,6 +353,7 @@ export default function Home(){
             </Flex>
 
             <Flex
+              direction={{base:'column', md:'row'}}
               gapX={3}
               width={"50%"}
               alignItems={"center"}
@@ -367,7 +371,7 @@ export default function Home(){
               <Box width={"49%"}>
                 <Text color={'#555555'}>
                   From concept to execution, our work speaks for itself. Here
-                  are a few projects we're proud of.
+                  are a few projects we&apos;re proud of.
                 </Text>
               </Box>
             </Flex>
@@ -375,12 +379,12 @@ export default function Home(){
         </section>
 
         <section>
-          <Box mt={"500px"} ml={"100px"} position={"relative"} h={100}>
+          <Box mt={"500px"} ml={['0px',"100px"]} position={"relative"} h={100}>
             <Box
               position={"absolute"}
               zIndex={4}
-              left={-20}
-              top={"-10"}
+              left={{base:50, md:'-20'}}
+              top={{base:'5', md:"-10"}}
               width={"fit"}
             >
               <Flex
@@ -403,9 +407,9 @@ export default function Home(){
                     Lead designer
                   </Text>
                 </Box>
-                <Box width={"30%"}>
+                <Box width={["100%",'30%']}>
                   <Text textAlign={"center"} pl={""} color={'#555555'}>
-                    I enrolled in the UI/UX Design course, and now I’m working
+                    I enrolled in the UI/UX Design course, and now I&apos;m working
                     at a top tech company! The EliteOn hands-on projects helped
                     me build a strong portfolio.
                   </Text>
@@ -417,7 +421,7 @@ export default function Home(){
             </Box>
             <Box
               position={"absolute"}
-              left={"200px"}
+              left={{base:'60px', md:"200px"}}
               top={""}
               zIndex={3}
               boxShadow={"md"}
@@ -430,7 +434,7 @@ export default function Home(){
 
             <Box
               position={"absolute"}
-              left={"190px"}
+              left={{base:'50px', md:"190px"}}
               top={"8"}
               zIndex={2}
               boxShadow="md"
@@ -443,7 +447,7 @@ export default function Home(){
 
             <Box
               position={"absolute"}
-              left={"180px"}
+              left={{base:'40px', md:"180px"}}
               top={"20"}
               zIndex={1}
               boxShadow="md"
@@ -456,7 +460,7 @@ export default function Home(){
             <Box
               position={"relative"}
               zIndex={0}
-              left={450}
+              left={{base:'200px', md:450}}
               top={-150}
               width={"fit"}
             >
@@ -484,7 +488,7 @@ export default function Home(){
             height={"100px"}
             boxShadow={"md"}
             position={"absolute"}
-            left={"950px"}
+            left={{base:'620px', md:"950px"}}
             boxSize={"50px"}
           >
             <IoIosArrowForward />
@@ -492,7 +496,7 @@ export default function Home(){
         </section>
 
         <section>
-          <Box ml={'100px'} mt={'300px'}>
+          <Box ml={['0px','100px']} mt={'300px'}>
             <Text color={'#555555'}>what can we do for you ?</Text>
             <Flex mt={4} gapX={3}>
               <Box bg={'#555555'} borderRadius={'full'} px={5} py={2}>
@@ -506,7 +510,7 @@ export default function Home(){
               </Box>
             </Flex>
             <Box mt={5}>
-              <Flex alignItems={'center'}>
+              <Flex alignItems={'center'} direction={{base:'column', md:'row'}}>
                 <Box width={'full'} spaceY={5}>
                   <Box width={'45%'}>
                     <Input placeholder="Name" size={'md'} width={'100%'} border={'none'} borderBottom={'2px solid #555555'} borderRadius={0} outline={'none'}></Input>
@@ -518,7 +522,7 @@ export default function Home(){
                     <Input placeholder="Project Details" size={'md'} width={'100%'} border={'none'} borderBottom={'2px solid #555555'} borderRadius={0} outline={'none'}></Input>
                   </Box>
                 </Box>
-                <Box spaceY={5} pt={10}>
+                <Box spaceY={5} pt={[0,10]}>
                   <Flex flexDirection={'column'} gapY={2}>
                     <Box>
                       <Text color='#555555'>Phone</Text>
