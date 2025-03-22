@@ -276,7 +276,7 @@ export default function Home(){
                       Who We Are
                     </Text>
                   </Box>
-                  <Text w="55%" color={'#555555'}>
+                  <Text w={['100%',"55%"]} color={'#555555'}>
                     We are a full-service digital agency transforming ideas into
                     reality. From designing logos to developing cutting-edge
                     websites, we specialize in creating digital experiences that
@@ -300,31 +300,31 @@ export default function Home(){
 
         <section>
           <Box position={"relative"} ml={['0px',"100px"]} mt={"50px"} pb={20}>
-            <Box position={"absolute"} left={{ base: "50px", md: "250px" }} top={{ base: "100px", md: "150px" }} width={["80px", "160px"]}>
+            <Box position={"absolute"} left={{ base: "200px", md: "250px" }} top={{ base: "240px", md: "150px" }} width={["80px", "160px"]}>
               <Image src={vector} alt="" width={160} />
             </Box>
 
-            <Box position={"absolute"} left={{base:'', md:"270px"}} top={"280px"} zIndex={1}>
+            <Box position={"absolute"} left={{base:'50px', md:"270px"}} top={{base:'450px', md:"280px"}} zIndex={1}  width={["80px", "200px"]}>
               <Image src={box} alt="" width={200} />
             </Box>
 
-            <Box position={"absolute"} left={{base:'80px', md:"250px"}} top={{base:'200px', md:"485px"}}>
+            <Box position={"absolute"} left={{base:'30px', md:"250px"}} top={{base:'510px', md:"485px"}} width={["60px", "200px"]}>
               <Image src={eclipse2} alt="" width={100} />
             </Box>
 
-            <Box position={"absolute"} left={"220px"} top={"435px"} zIndex={0}>
+            <Box position={"absolute"} left={{base:'15px', md:"220px"}} top={{base:'500px', md:"435px"}} zIndex={0} width={["80px", "200px"]}>
               <Image src={eclipse1} alt="" width={180} height={500} />
-            </Box>
+            </Box> 
 
-            <Box position={"absolute"} left={{base:'', md:"550px"}} top={{base:'', md:"140px"}}>
+            <Box position={"absolute"} left={{base:'280px', md:"550px"}} top={{base:'300px', md:"140px"}}  width={["80px", "200px"]}>
               <Image src={box} alt="" width={200} />
             </Box>
 
-            <Box position={"absolute"} left={{base:"100px", md:"800px"}} top={""} width={["80px", "200px"]}>
+            <Box position={"absolute"} left={{base:"170px", md:"800px"}} top={{base:"380px", md:"0px"}} width={["80px", "200px"]}>
               <Image src={box} alt="" width={200} />
             </Box>
 
-            <Flex flexDirection={"column"} gapY={"2"} w={"40%"}>
+            <Flex flexDirection={"column"} gapY={"2"} w={['100%', "40%"]}>
               <Text textTransform={"uppercase"} fontWeight={"bold"}>
                 portfolio highlights
               </Text>
@@ -353,13 +353,13 @@ export default function Home(){
             </Flex>
 
             <Flex
-              direction={{base:'column', md:'row'}}
+              direction={{base:'row', md:'row'}}
               gapX={3}
               width={"50%"}
               alignItems={"center"}
               position={"absolute"}
-              left={"550px"}
-              top={"500px"}
+              left={{base:'220px', md:"550px"}}
+              top={{base:'450px',md:"500px"}}
             >
               <Box
                 border={"1px solid #D9D9D9"}
@@ -368,7 +368,7 @@ export default function Home(){
                 width="50px"
                 height={"50px"}
               ></Box>
-              <Box width={"49%"}>
+              <Box width={['100%',"49%"]}>
                 <Text color={'#555555'}>
                   From concept to execution, our work speaks for itself. Here
                   are a few projects we&apos;re proud of.
@@ -429,7 +429,7 @@ export default function Home(){
               bg={"#ffffff"}
               height={"300px"}
               borderRadius={25}
-              width={500}
+              width={['250px',500]}
             ></Box>
 
             <Box
@@ -442,7 +442,7 @@ export default function Home(){
               bg={"#ffffff"}
               height={"250px"}
               borderRadius={25}
-              width={520}
+              width={['280px', 520]}
             ></Box>
 
             <Box
@@ -455,14 +455,14 @@ export default function Home(){
               bg={"#ffffff"}
               height={"170px"}
               borderRadius={25}
-              width={540}
+              width={['300px',540]}
             ></Box>
             <Box
               position={"relative"}
               zIndex={0}
               left={{base:'150px', md:450}}
               top={-150}
-              width={"fit"}
+              width={["120px", "fit"]}
             >
               <Image src={star} alt="" width={450} />
             </Box>
@@ -476,7 +476,7 @@ export default function Home(){
             height={"100px"}
             boxShadow={"md"}
             position={"absolute"}
-            left={"150px"}
+            left={{base:'0px', md:"150px"}}
             boxSize={"50px"}
           >
             <IoIosArrowBack />
@@ -488,7 +488,7 @@ export default function Home(){
             height={"100px"}
             boxShadow={"md"}
             position={"absolute"}
-            left={{base:'620px', md:"950px"}}
+            left={{base:'370px', md:"950px"}}
             boxSize={"50px"}
           >
             <IoIosArrowForward />
