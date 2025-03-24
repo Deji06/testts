@@ -19,14 +19,14 @@ const Navbar = () => {
   };
 
   return (
-    <Box className="flex flex-col sm:flex-row sm:items-center justify-between gap-y-5 sm:gap-y-0 mt-3 sm:px-10 "  padding='20px'>
+    <Box className="flex flex-col sm:flex-row sm:items-center justify-between gap-y-5 sm:gap-y-0 mt-3 sm:px-10 "  padding={['5px','20px']}>
       <div className="flex w-full sm:w-auto  justify-between items-center p-5 sm:p-0 ">
         <div className="sm:hidden text-[100px]"  onClick={handleMenu}>
           <GiHamburgerMenu />
         </div>
 
-        <div className="flex gap-x-3 items-center">
-          <Image src={logo} alt="company logo" width={60} height={30} />
+        <div className="flex gap-x-2 items-center pr-3">
+          <Image src={logo} alt="company logo" width={40} height={30} />
           <Link href={"/"}>
             {" "}
             <Image

@@ -24,9 +24,9 @@ import { Box, Flex, Text, Button, Icon, Input} from "@chakra-ui/react";
 
 export default function Home(){
     return (
-        <Box paddingLeft={['20px',"30px"]} paddingBottom="100px" paddingRight={["30px"]}>
+        <Box paddingLeft={['10px',"30px"]} paddingBottom="100px" paddingRight={["30px"]}>
         <Flex direction={{base:'column', md:'row'}} gapX="200px">
-          <Box bg="#D9D9D9" w="350px" h="500px" position="relative">
+          <Box bg="#D9D9D9" w={['full',"350px"]} h="500px" position="relative">
             <Box
               position="absolute"
               top="180px"
@@ -305,23 +305,23 @@ export default function Home(){
               <Image src={vector} alt="" width={160} />
             </Box>
 
-            <Box position={"absolute"} left={{base:'50px', md:"270px"}} top={{base:'450px', md:"280px"}} zIndex={1}  width={["80px", "200px"]}>
+            <Box position={"absolute"} left={{base:'30px', md:"270px"}} top={{base:'450px', md:"280px"}} zIndex={1}  width={["80px", "200px"]}>
               <Image src={box} alt="" width={200} />
             </Box>
 
-            <Box position={"absolute"} left={{base:'30px', md:"250px"}} top={{base:'510px', md:"485px"}} width={["60px", "200px"]}>
+            <Box position={"absolute"} left={{base:'20px', md:"250px"}} top={{base:'510px', md:"485px"}} width={["60px", "200px"]}>
               <Image src={eclipse2} alt="" width={100} />
             </Box>
 
-            <Box position={"absolute"} left={{base:'15px', md:"220px"}} top={{base:'500px', md:"435px"}} zIndex={0} width={["80px", "200px"]}>
+            <Box position={"absolute"} left={{base:'10px', md:"220px"}} top={{base:'500px', md:"435px"}} zIndex={0} width={["80px", "200px"]}>
               <Image src={eclipse1} alt="" width={180} height={500} />
             </Box> 
 
-            <Box position={"absolute"} left={{base:'280px', md:"550px"}} top={{base:'300px', md:"140px"}}  width={["80px", "200px"]}>
+            <Box position={"absolute"} left={{base:'260px', md:"550px"}} top={{base:'300px', md:"140px"}}  width={["80px", "200px"]}>
               <Image src={box} alt="" width={200} />
             </Box>
 
-            <Box position={"absolute"} left={{base:"170px", md:"800px"}} top={{base:"380px", md:"0px"}} width={["80px", "200px"]}>
+            <Box position={"absolute"} left={{base:"140px", md:"800px"}} top={{base:"380px", md:"0px"}} width={["80px", "200px"]}>
               <Image src={box} alt="" width={200} />
             </Box>
 
@@ -359,7 +359,7 @@ export default function Home(){
               width={['60%',"50%"]}
               alignItems={"center"}
               position={"absolute"}
-              left={{base:'150px', md:"550px"}}
+              left={{base:'120px', md:"550px"}}
               top={{base:'500px',md:"500px"}}
             >
               <Box
@@ -380,7 +380,7 @@ export default function Home(){
         </section>
 
         <section>
-          <Box mt={['300px',"500px"]} ml={['0px',"100px"]} position={"relative"} h={100}>
+          <Box mt={['350px',"500px"]} ml={['0px',"100px"]} position={"relative"} h={100}>
             <Box
               position={"absolute"}
               zIndex={4}
@@ -392,6 +392,7 @@ export default function Home(){
                 flexDir={"column"}
                 justifyContent={"center"}
                 alignItems={"center"}
+                // width={'fit'}
               >
                 <Box
                 position={{base:'absolute', md:'static'}}
@@ -403,16 +404,16 @@ export default function Home(){
                   width="70px"
                   height={"70px"}
                 ></Box>
-                <Box pt={4}>
-                  <Text fontWeight={"bold"} fontSize={['20px',"32px"]}>
+                <Box pt={[6,4]} margin={'auto'} w={'fit'}>
+                  <Text fontWeight={"bold"} fontSize={['20px',"32px"]} textAlign={'center'}>
                     Wale Yomi Fash.
                   </Text>
                   <Text pl={""} textAlign={"center"} color={'#555555'}>
                     Lead designer
                   </Text>
                 </Box>
-                <Box width={["50%",'30%']}>
-                  <Text textAlign={"center"} pl={""} color={'#555555'}>
+                <Box width={["60%",'30%']} margin={'auto'}>
+                  <Text textAlign={"center"}  color={'#555555'}>
                     I enrolled in the UI/UX Design course, and now I&apos;m working
                     at a top tech company! The EliteOn hands-on projects helped
                     me build a strong portfolio.
@@ -425,7 +426,7 @@ export default function Home(){
             </Box>
             <Box
               position={"absolute"}
-              left={{base:'60px', md:"200px"}}
+              left={{base:'70px', md:"200px"}}
               top={""}
               zIndex={3}
               boxShadow={"md"}
@@ -433,12 +434,12 @@ export default function Home(){
               bg={"#ffffff"}
               height={"300px"}
               borderRadius={25}
-              width={['250px',500]}
+              width={['240px',500]}
             ></Box>
 
             <Box
               position={"absolute"}
-              left={{base:'30px', md:"190px"}}
+              left={{base:'70px', md:"190px"}}
               top={"8"}
               zIndex={2}
               boxShadow="md"
@@ -446,12 +447,12 @@ export default function Home(){
               bg={"#ffffff"}
               height={"250px"}
               borderRadius={25}
-              width={['300px', 520]}
+              width={['250px', 520]}
             ></Box>
 
             <Box
               position={"absolute"}
-              left={{base:'20px', md:"180px"}}
+              left={{base:'50px', md:"180px"}}
               top={"20"}
               zIndex={1}
               boxShadow="md"
@@ -459,7 +460,7 @@ export default function Home(){
               bg={"#ffffff"}
               height={"170px"}
               borderRadius={25}
-              width={['320px',540]}
+              width={['280px',540]}
             ></Box>
             <Box
               position={"relative"}
@@ -492,7 +493,7 @@ export default function Home(){
             height={"100px"}
             boxShadow={"md"}
             position={"absolute"}
-            left={{base:'370px', md:"950px"}}
+            left={{base:'350px', md:"950px"}}
             boxSize={["30px", '50px']}
           >
             <IoIosArrowForward />
