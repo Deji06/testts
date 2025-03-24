@@ -426,7 +426,7 @@ export default function Home(){
             </Box>
             <Box
               position={"absolute"}
-              left={{base:'70px', md:"200px"}}
+              left={{base:'40px', md:"200px"}}
               top={""}
               zIndex={3}
               boxShadow={"md"}
@@ -434,12 +434,12 @@ export default function Home(){
               bg={"#ffffff"}
               height={"300px"}
               borderRadius={25}
-              width={['240px',500]}
+              width={['260px',500]}
             ></Box>
 
             <Box
               position={"absolute"}
-              left={{base:'70px', md:"190px"}}
+              left={{base:'30px', md:"190px"}}
               top={"8"}
               zIndex={2}
               boxShadow="md"
@@ -447,12 +447,12 @@ export default function Home(){
               bg={"#ffffff"}
               height={"250px"}
               borderRadius={25}
-              width={['250px', 520]}
+              width={['290px', 520]}
             ></Box>
 
             <Box
               position={"absolute"}
-              left={{base:'50px', md:"180px"}}
+              left={{base:'20px', md:"180px"}}
               top={"20"}
               zIndex={1}
               boxShadow="md"
@@ -460,7 +460,7 @@ export default function Home(){
               bg={"#ffffff"}
               height={"170px"}
               borderRadius={25}
-              width={['280px',540]}
+              width={['320px',540]}
             ></Box>
             <Box
               position={"relative"}
