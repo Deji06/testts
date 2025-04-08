@@ -1,41 +1,111 @@
-// import { Moon, Sun } from "lucide-react";
-// import { Label } from "@/components/ui/label"
-import { Switch } from "@/components/ui/switch"
+import {
+  Box,
+  Text,
+  Input,
+  Textarea,
+  Button,
+  Flex,
+  Grid,
+} from "@chakra-ui/react";
+import { Switch } from "@/components/ui/switch";
 
-export default function contact() {
-    return (
-        <div className="p-5 pb-10">
-            <h1 className="text-center text-[24px] hidden sm:flex">contact us</h1>
-            <form action="" className="mx-auto mt-10 sm:w-[50%] w-full h-auto">
-                <div className="grid grid-cols-2 gap-x-10 sm:gap-x-0">
-                    <div className="flex flex-col ">
-                        <label htmlFor="" className="font-bold">First Name</label>
-                        <input type="text" placeholder="First Name" className="border p-1 outline-none bg-[#F4F4F4] rounded-[10px] sm:w-[250px] placeholder:p-1 placeholder:text-[#A9A9A9] " />
-                    </div>
+export default function Contact() {
+  // const inputWidth = useBreakpointValue({ base: "100%", sm: "565px" });
 
-                    <div className="flex flex-col">
-                        <label htmlFor="" className="font-bold">Last Name</label>
-                        <input type="text" placeholder="Last Name"  className="border p-1 outline-none bg-[#F4F4F4] rounded-[10px] sm:w-[250px] placeholder:p-1 placeholder:text-[#A9A9A9] "/>
-                    </div>
-                </div>
+  return (
+    <Box p={5}  w="fit-content" mx="auto">
+      <Text textAlign="center" fontWeight="bold" fontSize="xl">
+        Contact Us
+      </Text>
 
-                <div className="pt-5  flex flex-col">
-                    <label htmlFor="" className="font-bold">Email Address</label>
-                    <input type="text" placeholder="Email Address" className="border p-1 outline-none bg-[#F4F4F4] rounded-[10px] sm:w-[565px] placeholder:p-1 placeholder:text-[#A9A9A9] "/>
-                </div>
-               
-                <div className="flex flex-col pt-5">
-                    <label htmlFor="" className="font-bold">Your Message</label>
-                    <textarea name="" id=""  className="border p-1 outline-none bg-[#F4F4F4] rounded-[10px] sm:w-[565px] placeholder:p-1 placeholder:text-[#A9A9A9] "  placeholder="Textarea"></textarea>
-                </div>
+      <form>
+        <Grid
+          templateColumns={{ base: "1fr", sm: "repeat(2, 1fr)" }}
+          columnGap={{ base: 10, sm: 0 }}
+          mt={10}
+          w="100%"
+        >
+          <Box mb={4} mr={{ sm: 4 }}>
+            <Text mb={1} fontWeight="bold">
+              First Name
+            </Text>
+            <Input
+              type="text"
+              placeholder="First Name"
+              bg="#F4F4F4"
+              border="1px solid"
+              borderColor="gray.200"
+              borderRadius="10px"
+              _placeholder={{ color: "#A9A9A9", px: 1 }}
+            />
+          </Box>
 
-                <div className="flex items-center space-x-2 mt-5">
-                     <Switch id="airplane-mode" />
-                     <label htmlFor="airplane-mode">I agree to the T&C</label>
-                </div>
-                <button className="border sm:w-[565px] w-[350px] rounded-[10px] mt-5 cursor-pointer bg-[#555555] text-white p-1 uppercase">send message</button>
-            </form>
-        </div>
-    )
+          <Box mb={4}>
+            <Text mb={1} fontWeight="bold">
+              Last Name
+            </Text>
+            <Input
+              type="text"
+              placeholder="Last Name"
+              bg="#F4F4F4"
+              border="1px solid"
+              borderColor="gray.200"
+              borderRadius="10px"
+              _placeholder={{ color: "#A9A9A9", px: 1 }}
+            />
+          </Box>
+        </Grid>
+
+        <Box mt={5}>
+          <Text mb={1} fontWeight="bold">
+            Email Address
+          </Text>
+          <Input
+            type="email"
+            placeholder="Email Address"
+            // width={inputWidth}
+            bg="#F4F4F4"
+            border="1px solid"
+            borderColor="gray.200"
+            borderRadius="10px"
+            _placeholder={{ color: "#A9A9A9", px: 1 }}
+          />
+        </Box>
+
+        <Box mt={5}>
+          <Text mb={1} fontWeight="bold">
+            Your Message
+          </Text>
+          <Textarea
+            placeholder="Textarea"
+            // width={inputWidth}
+            bg="#F4F4F4"
+            border="1px solid"
+            borderColor="gray.200"
+            borderRadius="10px"
+            _placeholder={{ color: "#A9A9A9", px: 1 }}
+          />
+        </Box>
+
+        <Flex alignItems="center" mt={5} gap={2}>
+          {/* <Switch id="airplane-mode" /> */}
+          <input type="checkbox" />
+          <Text>I agree to the T&amp;C</Text>
+        </Flex>
+
+        <Button
+          type="submit"
+          mt={5}
+          width={{ base: "350px", sm: "565px" }}
+          borderRadius="10px"
+          bg="#555555"
+          color="white"
+          textTransform="uppercase"
+          _hover={{ bg: "#444444" }}
+        >
+          Send Message
+        </Button>
+      </form>
+    </Box>
+  );
 }
-// #A9A9A9
