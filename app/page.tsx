@@ -2,7 +2,7 @@
 
 import React from "react";
 import Home from '@/app/Home/page'
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 
 
 const page = () => {
