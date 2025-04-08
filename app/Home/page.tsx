@@ -471,7 +471,7 @@ export default function Home() {
 
                 <Box mt={4} ml={[-2, 0]} border={'1px solid blu'} >
                   <Text color="#555555" fontSize={['12px', '16px']}>
-                    I enrolled in the UI/UX Design course, and now I'm working
+                    I enrolled in the UI/UX Design course, and now I&apos;m working
                     at a top tech company! The EliteOn hands-on projects helped
                     me build a strong portfolio.
                   </Text>

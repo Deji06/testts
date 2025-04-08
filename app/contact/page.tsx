@@ -7,7 +7,7 @@ import {
   Flex,
   Grid,
 } from "@chakra-ui/react";
-import { Switch } from "@/components/ui/switch";
+// import { Switch } from "@/components/ui/switch";
 
 export default function Contact() {
   // const inputWidth = useBreakpointValue({ base: "100%", sm: "565px" });
