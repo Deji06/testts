@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
+/* @custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
@@ -50,7 +50,7 @@
   }
 } */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: oklch(0.145 0 0);
     --foreground: oklch(1 0 0);
@@ -137,7 +137,7 @@
     @apply border-border outline-ring/50;
   }
   body {
-      background-color: var(--background, #fff); /* Fallback to white */
-      color: var(--foreground, #000);           /* Fallback to black */
+      background-color: var(--background, #fff);
+      color: var(--foreground, #000);    
     }
-}
+} */ 

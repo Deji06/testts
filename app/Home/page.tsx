@@ -118,7 +118,7 @@ export default function Home() {
               <Box>
                 <Flex
                   border="1px solid"
-                  w={["fit", "400px"]}
+                  w={["350px", "400px"]}
                   borderRadius={"60px"}
                   alignItems={"center"}
                   justifyContent={"space-between"}
@@ -126,7 +126,7 @@ export default function Home() {
                   px={3}
                 >
                   <Text>04</Text>
-                  <Box spaceX={"2px"} spaceY={1}>
+                  <Box spaceX={"2px"} spaceY={1} paddingY={'5px'}>
                     <Text fontWeight={"bold"} fontFamily={""}>
                       Digital Marketing
                     </Text>
@@ -140,7 +140,7 @@ export default function Home() {
               <Box>
                 <Flex
                   border="1px solid"
-                  w={["fit", "400px"]}
+                  w={["350px", "400px"]}
                   borderRadius={"60px"}
                   alignItems={"center"}
                   justifyContent={"space-between"}
@@ -148,7 +148,7 @@ export default function Home() {
                   px={3}
                 >
                   <Text>05</Text>
-                  <Box spaceX={"2px"} spaceY={1}>
+                  <Box spaceX={"2px"} spaceY={1} paddingY={'5px'}>
                     <Text fontWeight={"bold"}>Training Programs</Text>
                     <Text color={"#555555"}>
                       {" "}
@@ -161,7 +161,7 @@ export default function Home() {
               <Box>
                 <Flex
                   border="1px solid"
-                  w={["fit", "400px"]}
+                  w={["350px", "400px"]}
                   borderRadius={"60px"}
                   alignItems={"center"}
                   justifyContent={"space-between"}
@@ -169,7 +169,7 @@ export default function Home() {
                   px={3}
                 >
                   <Text>06</Text>
-                  <Box gapX={"2px"} spaceY={1}>
+                  <Box gapX={"2px"} spaceY={1} paddingY={'5px'}>
                     <Text fontWeight={"bold"}>Digital Marketing</Text>
                     <Text color={"#555555"}>
                       Includes Social Media Management, SEO, Paid Ads, and
@@ -184,7 +184,7 @@ export default function Home() {
               <Box>
                 <Flex
                   border="1px solid"
-                  w={["fit", "400px"]}
+                  w={["350px", "400px"]}
                   borderRadius={"60px"}
                   alignItems={"center"}
                   justifyContent={"space-between"}
@@ -193,7 +193,7 @@ export default function Home() {
                   px={3}
                 >
                   <Text color={"#555555"}>01</Text>
-                  <Box spaceX={"5px"} spaceY={1}>
+                  <Box spaceX={"5px"} spaceY={1} paddingY={'5px'}>
                     <Text fontWeight={"bold"}>Creative Design</Text>
                     <Text color={"#555555"}>
                       Includes Logo Design, Flyer & Brochure Design, App &
@@ -205,7 +205,7 @@ export default function Home() {
               <Box>
                 <Flex
                   border="1px solid"
-                  w={["fit", "400px"]}
+                  w={["350px", "400px"]}
                   borderRadius={"60px"}
                   alignItems={"center"}
                   justifyContent={"space-between"}
@@ -213,7 +213,7 @@ export default function Home() {
                   px={3}
                 >
                   <Text>02</Text>
-                  <Box spaceX={"2px"} spaceY={1}>
+                  <Box spaceX={"2px"} spaceY={1} paddingY={'5px'}>
                     <Text fontWeight={"bold"}>Web and App Development</Text>
                     <Text color={"#555555"}>
                       Includes Website Development, Custom Mobile & Web
@@ -225,7 +225,7 @@ export default function Home() {
               <Box>
                 <Flex
                   border="1px solid"
-                  w={["fit", "400px"]}
+                  w={["350px", "400px"]}
                   borderRadius={"60px"}
                   alignItems={"center"}
                   justifyContent={"space-between"}
@@ -233,7 +233,7 @@ export default function Home() {
                   px={"3"}
                 >
                   <Text>03</Text>
-                  <Box spaceX={"2px"} spaceY={1}>
+                  <Box spaceX={"2px"} spaceY={1} paddingY={'5px'}>
                     <Text fontWeight={"bold"}>Digital Marketing</Text>
                     <Text color={"#555555"}>
                       Includes Social Media Management, SEO, Paid Ads, and
@@ -447,7 +447,7 @@ export default function Home() {
               flexDir="column"
               justify="center"
               align={['left',"center"]}
-              textAlign="center"
+              textAlign={['left', 'center']}
               // adjusted px size
               px={[30,280]}
               w="100%"
@@ -541,6 +541,7 @@ export default function Home() {
           position={"absolute"}
           left={{ base: "0px", md: "150px" }}
           boxSize={["30px", "50px"]}
+          display={{base:'none', md: 'flex'}}
         >
           <IoIosArrowBack />
         </Icon>
@@ -553,8 +554,9 @@ export default function Home() {
           position={"absolute"}
           left={{ base: "350px", md: "950px" }}
           boxSize={["30px", "50px"]}
+          display={{base:'none', md: 'flex'}}
         >
-          <IoIosArrowForward />
+          <IoIosArrowForward  className="hidden"/>
         </Icon>
       </section>
 
