@@ -1,7 +1,9 @@
+import { Box , Text} from "@chakra-ui/react";
+
 export default function portfolio() {
     return (
-        <div>
-            <h1>portfolio page</h1>
-        </div>
+        <Box background={'white'}>
+            <Text color='black' ml={5}>portfolio page</Text>
+        </Box>
     )
 }

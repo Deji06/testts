@@ -4,7 +4,7 @@ import { MdArrowOutward } from "react-icons/md";
 
 export default function services() {
     return (
-        <Box bgColor={'#D35400'} padding={5} marginTop={5}>
+        <Box bgColor={'#D35400'} padding={5}>
             <Box w={''}>
                 <Box >
                     <Text color={'white'} fontSize={'30px'} textTransform={'capitalize'}>our services</Text>

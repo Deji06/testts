@@ -19,10 +19,13 @@ const Navbar = () => {
   };
 
   return (
-    <Box className="flex flex-col sm:flex-row sm:items-center justify-between gap-y-5 sm:gap-y-0 mt-3 sm:px-10 "  padding={['5px','20px']}>
+    <Box
+      className="flex flex-col sm:flex-row sm:items-center justify-between gap-y-5 sm:gap-y-0 mt-3 sm:px-10 bg-white "
+      padding={["5px", "20px"]}
+    >
       <div className="flex w-full sm:w-auto  justify-between items-center p-5 sm:p-0 ">
-        <div className="sm:hidden text-[100px]"  onClick={handleMenu}>
-          <GiHamburgerMenu />
+        <div className="sm:hidden text-[100px]" onClick={handleMenu}>
+          <GiHamburgerMenu color="black" />
         </div>
 
         <div className="flex gap-x-2 items-center pr-3">
@@ -52,10 +55,12 @@ const Navbar = () => {
           >
             <Link
               href={"/about"}
-              className="capitalize"
+              className="capitalize text-black"
               onClick={() => setOpenMenu(false)}
             >
-              about us
+              <Text color="black" _hover={{ color: "d35400" }}>
+                about us
+              </Text>
             </Link>
           </li>
           <div className="border h-4 hidden sm:flex"></div>
@@ -66,10 +71,10 @@ const Navbar = () => {
           >
             <Link
               href={"/services"}
-              className="capitalize"
+              className="capitalize text-black"
               onClick={() => setOpenMenu(false)}
             >
-              services
+              <Text color="black">service</Text>
             </Link>
           </li>
           <div className="border h-4 hidden sm:flex`"></div>
@@ -80,10 +85,11 @@ const Navbar = () => {
           >
             <Link
               href={"/portfolio"}
-              className="capitalize"
+              className="capitalize text-black"
               onClick={() => setOpenMenu(false)}
             >
-              portfolio
+              <Text color="black">portfolio</Text>
+              {/* portfolio */}
             </Link>
           </li>
         </ul>
@@ -93,31 +99,72 @@ const Navbar = () => {
 
       {/* desktop view */}
       <ul className=" hidden sm:flex flex-col sm:flex-row sm:items-center items-start p-5 sm:p-0  gap-x-3 gap-y-5">
-        <li className={pathname === "/" ? "font-bold text-[#D35400]" : ""}>
-          <Link href={"/"} className="capitalize"><Text textStyle='md' fontWeight={"medium"}> home </Text></Link>
-        </li>
-        <Box borderWidth='1px' height='20px' borderColor='black'></Box>
-        <li className={pathname === "/about" ? "font-bold text-[#D35400]" : ""}>
-          <Link href={"/about"} className="capitalize">
-            <Text textStyle='md' fontWeight={"medium"} color={'#333333'}> about us </Text>
+        <li
+          className={
+            pathname === "/" ? "font-bold text-[#D35400]" : "text-black"
+          }
+        >
+          <Link href={"/"} className="capitalize">
+            <Text
+              textStyle="md"
+              fontWeight={"medium"}
+              _hover={{ color: "#d35400" }}
+            >
+              {" "}
+              home{" "}
+            </Text>
           </Link>
         </li>
-        <Box borderWidth='1px' height='20px' borderColor='black'></Box>
+        <Box borderWidth="1px" height="20px" borderColor="black"></Box>
+        <li
+          className={
+            pathname === "/about" ? "font-bold text-[#D35400]" : "text-black"
+          }
+        >
+          <Link href={"/about"} className="capitalize">
+            <Text
+              textStyle="md"
+              fontWeight={"medium"}
+              color={"#333333"}
+              _hover={{ color: "#d35400" }}
+            >
+              {" "}
+              about us{" "}
+            </Text>
+          </Link>
+        </li>
+        <Box borderWidth="1px" height="20px" borderColor="black"></Box>
         <li
           className={pathname === "/services" ? "font-bold text-[#D35400]" : ""}
         >
           <Link href={"/services"} className="capitalize">
-           <Text textStyle='md' fontWeight={"medium"} color={'#333333'} > service </Text>
+            <Text
+              textStyle="md"
+              fontWeight={"medium"}
+              color={"#333333"}
+              _hover={{ color: "#d35400" }}
+            >
+              {" "}
+              service{" "}
+            </Text>
           </Link>
         </li>
-        <Box borderWidth='1px' height='20px' borderColor='black'></Box>
+        <Box borderWidth="1px" height="20px" borderColor="black"></Box>
         <li
           className={
             pathname === "/portfolio" ? "font-bold text-[#D35400]" : ""
           }
         >
           <Link href={"/portfolio"} className="capitalize">
-           <Text textStyle='md' fontWeight={"medium"} color={'#333333'}> portfolio </Text>
+            <Text
+              textStyle="md"
+              fontWeight={"medium"}
+              color={"#333333"}
+              _hover={{ color: "#d35400" }}
+            >
+              {" "}
+              portfolio{" "}
+            </Text>
           </Link>
         </li>
       </ul>
@@ -127,14 +174,17 @@ const Navbar = () => {
         border="1px solid #D35400"
         color="#D35400"
         _hover={{ bg: "#D35400", color: "white" }}
-        borderRadius='20px'
+        borderRadius="20px"
       >
         <Link
           href={"/contact"}
           className="capitalize text-[20px] "
           onClick={() => setOpenMenu(false)}
         >
-            <Text textStyle='md' fontWeight={"medium"} color={'#333333'}> contact us </Text>
+          <Text textStyle="md" fontWeight={"medium"} color={"#333333"}>
+            {" "}
+            contact us{" "}
+          </Text>
         </Link>
       </Button>
     </Box>

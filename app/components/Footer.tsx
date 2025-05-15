@@ -4,7 +4,7 @@ import { FaSquareFacebook, FaInstagram, FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <Box bg="#555555" pb={3} px={5} width={'100%'} mt={'50px'}>
+    <Box bg="#555555" pb={3} px={5} width={'100%'}>
       <Flex
         direction={{ base: "column", sm: "row" }}
         align="center"

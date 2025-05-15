@@ -25,9 +25,10 @@ export default function Home() {
       paddingLeft={["10px", "30px"]}
       paddingBottom="100px"
       paddingRight={["30px"]}
+      background={'#fff'}
     >
-      <Flex direction={{ base: "column", md: "row" }} gapX="200px">
-        <Box bg="#D9D9D9" w={["full", "350px"]} h="500px" position="relative">
+      <Flex direction={{ base: "column", md: "row" }} gapX="100px">
+        <Box bg="#D9D9D9" w={["full", "350px"]} h="550px" position="relative">
           <Box
             position="absolute"
             top="180px"
@@ -41,15 +42,16 @@ export default function Home() {
             <Image src={polygon} alt="circle" width={0} />
           </Box>
         </Box>
-        <Box>
+        <Box border={'1px solid'} w={['fit','60%']}>
           <Text
             textTransform="capitalize"
+            w={['fit','60%']}
             fontSize="60px"
             fontWeight={"bold"}
             color={"#333333"}
             textAlign={["left", "left"]}
           >
-            turning <br /> creativity into <br />
+            turning  creativity into
             reality.
           </Text>
           <Text mt="10px" color={"#333333"}>
@@ -97,7 +99,7 @@ export default function Home() {
       </Flex>
 
       <section>
-        <Box ml={["0px", "100px"]} mt={5}>
+        <Box ml={["0px", "100px"]} mt={5} background={'#fff'}>
           <Text textTransform={"uppercase"} fontSize={"14px"} color={"#555555"}>
             our services
           </Text>
@@ -117,7 +119,7 @@ export default function Home() {
             <Flex flexDirection={"column"} gapY={6}>
               <Box>
                 <Flex
-                  border="1px solid"
+                  border="1px solid black"
                   w={["350px", "400px"]}
                   borderRadius={"60px"}
                   alignItems={"center"}
@@ -125,9 +127,9 @@ export default function Home() {
                   gapX={"20px"}
                   px={3}
                 >
-                  <Text>04</Text>
+                  <Text color={'#000'}>04</Text>
                   <Box spaceX={"2px"} spaceY={1} paddingY={'5px'}>
-                    <Text fontWeight={"bold"} fontFamily={""}>
+                    <Text fontWeight={"bold"} fontFamily={""} color={'#000'}>
                       Digital Marketing
                     </Text>
                     <Text color={"#555555"}>
@@ -139,7 +141,7 @@ export default function Home() {
               </Box>
               <Box>
                 <Flex
-                  border="1px solid"
+                  border="1px solid black"
                   w={["350px", "400px"]}
                   borderRadius={"60px"}
                   alignItems={"center"}
@@ -147,9 +149,9 @@ export default function Home() {
                   gapX={"20px"}
                   px={3}
                 >
-                  <Text>05</Text>
+                  <Text color={'#000'}>05</Text>
                   <Box spaceX={"2px"} spaceY={1} paddingY={'5px'}>
-                    <Text fontWeight={"bold"}>Training Programs</Text>
+                    <Text fontWeight={"bold"} color={'#000'}>Training Programs</Text>
                     <Text color={"#555555"}>
                       {" "}
                       Includes Graphic Design, UI/UX Design, Web Development,
@@ -160,7 +162,7 @@ export default function Home() {
               </Box>
               <Box>
                 <Flex
-                  border="1px solid"
+                  border="1px solid black"
                   w={["350px", "400px"]}
                   borderRadius={"60px"}
                   alignItems={"center"}
@@ -168,9 +170,9 @@ export default function Home() {
                   gapX={"20px"}
                   px={3}
                 >
-                  <Text>06</Text>
+                  <Text color={'#000'}>06</Text>
                   <Box gapX={"2px"} spaceY={1} paddingY={'5px'}>
-                    <Text fontWeight={"bold"}>Digital Marketing</Text>
+                    <Text fontWeight={"bold"} color={'#000'}>Digital Marketing</Text>
                     <Text color={"#555555"}>
                       Includes Social Media Management, SEO, Paid Ads, and
                       Campaigns.
@@ -183,7 +185,7 @@ export default function Home() {
             <Flex flexDirection={"column"} gapY={6}>
               <Box>
                 <Flex
-                  border="1px solid"
+                  border="1px solid black"
                   w={["350px", "400px"]}
                   borderRadius={"60px"}
                   alignItems={"center"}
@@ -194,7 +196,7 @@ export default function Home() {
                 >
                   <Text color={"#555555"}>01</Text>
                   <Box spaceX={"5px"} spaceY={1} paddingY={'5px'}>
-                    <Text fontWeight={"bold"}>Creative Design</Text>
+                    <Text fontWeight={"bold"} color={'#000'}>Creative Design</Text>
                     <Text color={"#555555"}>
                       Includes Logo Design, Flyer & Brochure Design, App &
                       Website UI/UX
@@ -204,7 +206,7 @@ export default function Home() {
               </Box>
               <Box>
                 <Flex
-                  border="1px solid"
+                  border="1px solid black"
                   w={["350px", "400px"]}
                   borderRadius={"60px"}
                   alignItems={"center"}
@@ -212,9 +214,9 @@ export default function Home() {
                   columnGap={"20px"}
                   px={3}
                 >
-                  <Text>02</Text>
+                  <Text color={'#000'}>02</Text>
                   <Box spaceX={"2px"} spaceY={1} paddingY={'5px'}>
-                    <Text fontWeight={"bold"}>Web and App Development</Text>
+                    <Text fontWeight={"bold"} color={'#000'}>Web and App Development</Text>
                     <Text color={"#555555"}>
                       Includes Website Development, Custom Mobile & Web
                       Applications.
@@ -224,7 +226,7 @@ export default function Home() {
               </Box>
               <Box>
                 <Flex
-                  border="1px solid"
+                  border="1px solid black"
                   w={["350px", "400px"]}
                   borderRadius={"60px"}
                   alignItems={"center"}
@@ -232,9 +234,9 @@ export default function Home() {
                   gapX={"20px"}
                   px={"3"}
                 >
-                  <Text>03</Text>
+                  <Text color={'#000'}>03</Text>
                   <Box spaceX={"2px"} spaceY={1} paddingY={'5px'}>
-                    <Text fontWeight={"bold"}>Digital Marketing</Text>
+                    <Text fontWeight={"bold"} color={'#000'}>Digital Marketing</Text>
                     <Text color={"#555555"}>
                       Includes Social Media Management, SEO, Paid Ads, and
                       Campaigns.
@@ -250,7 +252,7 @@ export default function Home() {
                     Train with the best to build your digital expertise.
                   </Text>
                   <Box border={"1px solid #d35400"} borderRadius={"50%"} p={2}>
-                    <FaArrowRight />
+                    <FaArrowRight color="black" />
                   </Box>
                 </Flex>
               </Box>
@@ -260,7 +262,7 @@ export default function Home() {
       </section>
 
       <section className="mt-5">
-        <Box ml={["0px", "100px"]} mt={"50px"}>
+        <Box ml={["0px", "100px"]} mt={"50px"} background={'#fff'}>
           <Flex
             direction={{ base: "column", md: "row" }}
             mt="40px"
@@ -282,6 +284,7 @@ export default function Home() {
                     fontWeight="bold"
                     textTransform={"uppercase"}
                     lineHeight={["2", "1"]}
+                    color={'#000'}
                     m="0"
                   >
                     About Us
@@ -289,7 +292,8 @@ export default function Home() {
                   <Text
                     fontSize={"48px"}
                     fontWeight={"bold"}
-                    lineHeight={["2", "1"]}
+                    color={'#000'}
+                    // lineHeight={["2", "1"]}
                     m="0"
                   >
                     Who We Are
@@ -318,7 +322,7 @@ export default function Home() {
       </section>
 
       <section>
-        <Box position={"relative"} ml={["0px", "100px"]} mt={"50px"} pb={20}>
+        <Box position={"relative"} ml={["0px", "100px"]} mt={"50px"} pb={20} background={'#fff'}>
           <Box
             position={"absolute"}
             left={{ base: "200px", md: "250px" }}
@@ -376,12 +380,13 @@ export default function Home() {
           </Box>
 
           <Flex flexDirection={"column"} gapY={"2"} w={["100%", "40%"]}>
-            <Text textTransform={"uppercase"} fontWeight={"bold"}>
+            <Text textTransform={"uppercase"} fontWeight={"bold"} color={'#000'}>
               portfolio highlights
             </Text>
             <Text
               textTransform={"uppercase"}
               fontWeight={"bold"}
+              color={'#000'}
               fontSize={"40px"}
             >
               our creative works
@@ -434,6 +439,7 @@ export default function Home() {
           mt={["350px", "500px"]}
           ml={["0px", "100px"]}
           position={"relative"}
+          background={'#fff'}
           h={100}
         >
           <Box
@@ -449,13 +455,13 @@ export default function Home() {
               align={['left',"center"]}
               textAlign={['left', 'center']}
               // adjusted px size
-              px={[30,280]}
+              px={[0,280]}
               w="100%"
             >
               <Box
                 position={{ base: "absolute", md: "static" }}
                 top={{ base: "-50px", md: "0px" }}
-                left={{ base: "100px", md: "0px" }}
+                left={{ base: "85px", md: "0px" }}
                 border="1px solid #D9D9D9"
                 bg="#D9D9D9"
                 borderRadius="full"
@@ -463,13 +469,13 @@ export default function Home() {
                 height="70px"
               ></Box>
 
-              <Box mt={5} ml={0} maxW={["80%", "500px"]} border={'1px solid re'}>
-                <Text fontWeight="bold" fontSize={["20px", "32px"]}>
+              <Box mt={5} pl={10} maxW={["80%", "500px"]} border={'1px solid re'}>
+                <Text fontWeight="bold" fontSize={["20px", "32px"]} color={'#000'}>
                   Wale Yomi Fash.
                 </Text>
                 <Text color="#555555">Lead designer</Text>
 
-                <Box mt={4} ml={[-2, 0]} border={'1px solid blu'} >
+                <Box mt={4} ml={[0, 20]} border={'1px solid blu'} w={['80%', '60%']} >
                   <Text color="#555555" fontSize={['12px', '16px']}>
                     I enrolled in the UI/UX Design course, and now I&apos;m working
                     at a top tech company! The EliteOn hands-on projects helped
@@ -547,6 +553,7 @@ export default function Home() {
         </Icon>
         <Icon
           bgColor={"white"}
+          color={"#000"}
           borderRadius={"full"}
           width={"100px"}
           height={"100px"}
@@ -561,7 +568,7 @@ export default function Home() {
       </section>
 
       <section>
-        <Box ml={["0px", "100px"]} mt={"300px"}>
+        <Box ml={["10px", "100px"]} mt={"300px"} background={'#fff'}>
           <Text color={"#555555"}>what can we do for you ?</Text>
           <Flex
             flexDirection={{ base: "column", md: "row" }}
@@ -574,24 +581,24 @@ export default function Home() {
                 product design
               </Text>
             </Box>
-            <Box border={"1px solid"} borderRadius={"full"} px={5} py={2}>
+            <Box border={"1px solid black"} borderRadius={"full"} px={5} py={2}>
               <Text color={"#555555"} textTransform={"capitalize"}>
                 website development
               </Text>
             </Box>
-            <Box border={"1px solid"} borderRadius={"full"} px={5} py={2}>
+            <Box border={"1px solid black"} borderRadius={"full"} px={5} py={2}>
               <Text color={"#555555"} textTransform={"capitalize"}>
                 digital marketing
               </Text>
             </Box>
           </Flex>
-          <Box mt={5}>
+          <Box mt={5} ml={[5,0]}>
             <Flex
               alignItems={{ base: "left", md: "center" }}
               direction={{ base: "column", md: "row" }}
             >
               <Box width={"full"} spaceY={5}>
-                <Box width={"45%"}>
+                <Box width={['100%',"45%"]}>
                   <Input
                     placeholder="Name"
                     size={"md"}
@@ -602,7 +609,7 @@ export default function Home() {
                     outline={"none"}
                   ></Input>
                 </Box>
-                <Box width={"45%"}>
+                <Box  width={['100%',"45%"]}>
                   <Input
                     placeholder="Email"
                     size={"md"}
@@ -613,7 +620,7 @@ export default function Home() {
                     outline={"none"}
                   ></Input>
                 </Box>
-                <Box width={"45%"}>
+                <Box  width={['100%',"45%"]}>
                   <Input
                     placeholder="Project Details"
                     size={"md"}
@@ -636,7 +643,7 @@ export default function Home() {
                 </Flex>
                 <Flex flexDirection={"column"} gapY={2}>
                   <Box>
-                    <Text>Email</Text>
+                    <Text color={'#000'}>Email</Text>
                     <Text color="#555555" fontWeight={"bold"}>
                       thegrowthnexus7@gmail.com
                     </Text>
