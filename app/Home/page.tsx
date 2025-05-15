@@ -22,7 +22,7 @@ import { Box, Flex, Text, Button, Icon, Input } from "@chakra-ui/react";
 export default function Home() {
   return (
     <Box
-      paddingLeft={["10px", "30px"]}
+      paddingLeft={["20px", "30px"]}
       paddingBottom="100px"
       paddingRight={["30px"]}
       background={'#fff'}
@@ -470,13 +470,13 @@ export default function Home() {
               ></Box>
 
               <Box mt={5} pl={10} maxW={["80%", "500px"]} border={'1px solid re'}>
-                <Text fontWeight="bold" fontSize={["20px", "32px"]} color={'#000'}>
+                <Text fontWeight="bold" fontSize={["20px", "32px"]} paddingLeft={['10px','0px']} color={'#000'}>
                   Wale Yomi Fash.
                 </Text>
-                <Text color="#555555">Lead designer</Text>
+                <Text color="#555555" paddingLeft={['20px', '0px']}>Lead designer</Text>
 
                 <Box mt={4} ml={[0, 20]} border={'1px solid blu'} w={['80%', '60%']} >
-                  <Text color="#555555" fontSize={['12px', '16px']}>
+                  <Text color="#555555" fontSize={['12px', '16px']} textAlign={'center'}>
                     I enrolled in the UI/UX Design course, and now I&apos;m working
                     at a top tech company! The EliteOn hands-on projects helped
                     me build a strong portfolio.
@@ -607,6 +607,8 @@ export default function Home() {
                     borderBottom={"2px solid #555555"}
                     borderRadius={0}
                     outline={"none"}
+                    color={'black'}
+
                   ></Input>
                 </Box>
                 <Box  width={['100%',"45%"]}>
@@ -617,6 +619,8 @@ export default function Home() {
                     border={"none"}
                     borderBottom={"2px solid #555555"}
                     borderRadius={0}
+                    color={'black'}
+
                     outline={"none"}
                   ></Input>
                 </Box>
@@ -629,6 +633,7 @@ export default function Home() {
                     borderBottom={"2px solid #555555"}
                     borderRadius={0}
                     outline={"none"}
+                    color={'black'}
                   ></Input>
                 </Box>
               </Box>

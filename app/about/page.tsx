@@ -8,7 +8,7 @@ export default function about() {
        <Text fontSize={'40px'} paddingTop={50} textTransform={'uppercase'} paddingLeft={[2,5]} color='black'>About us</Text>
        <Box w={'fit'} h={'auto'}>
         {/* container */}
-        <Flex gapX={5} justifyContent={'space-around'} padding={[2,5]}>
+        <Flex gapX={5} justifyContent={'space-around'} padding={[0,5]}>
           <Flex flexDirection={'column'} gapY={10} >
             <Box bg={'#F2EFED'} w={[200,400]} h={150} rounded={'15px'}></Box>
             <Box bg={'#F2EFED'} w={[200,400]} h={150} rounded={'15px'}></Box>
@@ -19,10 +19,10 @@ export default function about() {
       </Flex>
 
       <Box marginTop={10}>
-        <Flex  flexDirection={{base:"column", md:'row'}} justifyContent={'space-between'} alignItems={'center'} gapX={3}>
+        <Flex  flexDirection={{base:"column", md:'row'}} justifyContent={'space-between'} alignItems={['left', 'center']} gapX={3}>
           <Box w={'fit'} h={'auto'}>
             {/* container */}
-            <Flex gapX={5} justifyContent={'space-around'} padding={[2,5]}>
+            <Flex gapX={5} justifyContent={'space-around'} padding={[0,5]}>
               <Flex flexDirection={'column'} gapY={10} >
                 <Box bg={'#F2EFED'} w={[200,400]} h={150} rounded={'15px'}></Box>
                 <Box bg={'#F2EFED'} w={[200,400]} h={150} rounded={'15px'}></Box>
@@ -30,7 +30,7 @@ export default function about() {
               <Box bg={'#F2EFED'} w={150} h={330} rounded={'15px'}></Box>
             </Flex>
           </Box>
-          <Flex flexDirection={'column'} mt={[3, 0]} pl={[2, 0]} gapY={5} >
+          <Flex flexDirection={'column'} mt={[5, 0]} pl={[2, 0]} gapY={5}  pb={5}>
             <Text fontWeight={'bold'} fontSize={'20px'} color='black'>Creativity, Innovation, and Excellence in Every Project</Text>
             <Text color='black'>
               At EliteOn, we specialize in helping brands build an exceptional digital presence.

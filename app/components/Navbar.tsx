@@ -46,7 +46,7 @@ const Navbar = () => {
         <ul className="flex flex-col sm:flex-row sm:items-center items-start p-5 sm:p-0  gap-x-3 gap-y-5">
           <li className={pathname === "/" ? "font-bold text-[#D35400]" : ""}>
             <Link href={"/"} onClick={() => setOpenMenu(false)}>
-              Home
+              <Text color={'black'}>Home</Text>
             </Link>
           </li>
           <div className="border h-4 hidden sm:flex"></div>
